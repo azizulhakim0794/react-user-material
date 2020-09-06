@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import UserCompo from '../UserCompo/UserCompo';
-const RandomUser = () => {
+const HomePage = () => {
     const [userData,setUserData] = useState([])
     useEffect(() =>{
         const userURL ='https://jsonplaceholder.typicode.com/posts'
@@ -17,4 +17,4 @@ const RandomUser = () => {
     );
 };
 
-export default RandomUser;
+export default HomePage;

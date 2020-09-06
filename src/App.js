@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import RandomUser from './components/RandomUser/RandomUser';
+import HomePage from './components/HomePage/HomePage';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import UserDetails from './components/UserDetails/UserDetails';
 import NoMatch from './components/NoMatch/NoMatch';
@@ -16,11 +15,11 @@ function App() {
   return (
         <Router>
         <Switch>
-          <Route  path="/randomuser">
-            <RandomUser/>
+          <Route  path="/home">
+            <HomePage/>
             </Route>
             <Route exact path="/">
-            <RandomUser/>
+            <HomePage/>
             </Route>
             <Route path="/about/:userId">
             <UserDetails/>
